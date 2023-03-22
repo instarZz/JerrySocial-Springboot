@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class User {
 
+	public Integer id;
 	public String username;
 	public String firstname;
 	public String lastname;
@@ -11,6 +12,11 @@ public class User {
 	public Date birthday;
 	private String password;
 	private Integer phoneNumber;
+	
+	@Override
+	public String toString() {
+		return "User [id=" + id + "]";
+	}
 	
 	public String getUsername() {
 		return username;
